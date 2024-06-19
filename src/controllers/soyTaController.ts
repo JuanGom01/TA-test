@@ -7,6 +7,6 @@ export const soyTaController = async(req: Request, res: Response)=>{
         res.status(200).json(respuesta.data)
     }
     catch(err) {
-        res.status(500).json(err)
+        res.status(500).json({message: "algo salio mal", err})
     }
 }
